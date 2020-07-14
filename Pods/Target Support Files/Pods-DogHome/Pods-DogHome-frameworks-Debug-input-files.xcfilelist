@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-DogHome/Pods-DogHome-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/EasyDi/EasyDi.framework
+${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework

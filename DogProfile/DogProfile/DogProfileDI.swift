@@ -15,7 +15,10 @@ public class DogProfileDI: Assembly, DogProfileProtocol {
     }
 
     private func createView(id: String) -> UIViewController {
-        define(init: DogProfileViewController()) {
+        let storyboard = UIStoryboard(name: "DogProfileViewController",
+                                      bundle: Bundle(for: DogProfileDI.self))
+        let view = storyboard.instantiateInitialViewController() as! DogProfileViewController
+        return define(init: view) {
             $0.presenter = self.createPresenter(id: id)
             return $0
         }

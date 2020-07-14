@@ -18,10 +18,12 @@
 		0D1F289006DE45CAE876FE42EECDB411 /* SchedulerServices+Emulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2BA87A329DF7159368B762078D77FA /* SchedulerServices+Emulation.swift */; };
 		0D21ACAB88347EB1662F251EC69F61EA /* SubscriptionDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905C0FC211CC8611BDDDFF9A45BDD5F8 /* SubscriptionDisposable.swift */; };
 		0DA1FA67D90F91687B236AACDCDAB5CD /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C8C6FFD3C4A6E00D448F4416ECB4A5 /* Merge.swift */; };
+		0EEB69D4A7755A0EAD8ED6B017DFC7D5 /* Pods-DogHome-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DFFF0178E71BD07EDA60D17607B77458 /* Pods-DogHome-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		117C7987156E1A7A3639C947CF7BC388 /* BooleanDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6EBDEE608067A6DC1AA13313E10511 /* BooleanDisposable.swift */; };
 		1482A11ECD1F6F72917AAA06F26BE00B /* ShareReplayScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5923BBB886BD5EEFF8A99A5BE05ACD /* ShareReplayScope.swift */; };
 		15157F810F5368CB055EE37811F85178 /* NopDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAE398875B68B61DF2A9B2CD375DF42 /* NopDisposable.swift */; };
 		17E25E9FBB95CA1AC5C1281DDED74AEF /* AnyObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66F293609A519B29707B24BC174914A /* AnyObserver.swift */; };
+		18890118D5F9FB2A83959F7FACB3D64B /* Pods-DogHome-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ABF3FB9F0F16BB6B974C0D41F19701 /* Pods-DogHome-dummy.m */; };
 		2230DF4E1468CE3674284F92B470CDA7 /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5031634F153832544D3ED2ED741630DA /* Switch.swift */; };
 		2271E0F1B38BBB61D1731FD472B7F844 /* ElementAt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3326527D6EDBA2C8FDBADACD7E0E6084 /* ElementAt.swift */; };
 		266AC4D6C1A53A922DCCEAE0982D910A /* RefCountDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED6CBB00EE6632A39C9602C00833849 /* RefCountDisposable.swift */; };
@@ -40,7 +42,6 @@
 		3C97C54C92D85F6ABB183CF1C55D148A /* Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6412876477850E058ACB60F839D4236 /* Rx.swift */; };
 		3D1AFEF6601D082C6044491ECC6AB7DE /* RxSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2391234E71C473155F0A6E26E705504E /* RxSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F10AD92633EA9E519D7E680CC64050A /* Bag+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB0995A50DFCAFA31BAB0E30A0A88A /* Bag+Rx.swift */; };
-		3F8AC600795E1906A52A1DF826A1295C /* Pods-DogHome-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DFFF0178E71BD07EDA60D17607B77458 /* Pods-DogHome-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3FB037B5DD08C7EA997846A6F544F3EC /* Zip+arity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D0E5FDFE835E4A50A22D05B5611916 /* Zip+arity.swift */; };
 		4078398B595D8DE977C770D94927F44B /* AtomicInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E714AB46522CE4C9D3E14300EE467BD8 /* AtomicInt.swift */; };
 		42AC2D9058A22399223D7267A5D492C1 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3236587144CBFBCDF558C6B7E3E6BF64 /* Timer.swift */; };
@@ -86,7 +87,6 @@
 		740FEF0C5CD508735F3A58338F746B09 /* RetryWhen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F7B055F28395575928EBDF76F41BBA /* RetryWhen.swift */; };
 		751AAC78676F92587A0E83EFFEA68D20 /* InvocableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710709BBA30E3FC5AD089248AEA2B848 /* InvocableType.swift */; };
 		78941C4CD9F68970270DC8AFFA9AD58B /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542CDF0ACFA3A5B48DCB6694AFCAC17E /* Delay.swift */; };
-		7CF2AF4077028D2113A1873C7B6E7FD6 /* Pods-DogHome-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ABF3FB9F0F16BB6B974C0D41F19701 /* Pods-DogHome-dummy.m */; };
 		7E37FA3EC9ED6E4DE077907F3E6E0C79 /* Completable+AndThen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AD22DD552982BC047001D39DA556E6 /* Completable+AndThen.swift */; };
 		7EA7716D71A38E6610DA9CD8A736752C /* SerialDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB6886213851A16B21182930E2C160A /* SerialDisposable.swift */; };
 		802FA4D45B2AD2FB18FA490C38CEAEBE /* WithLatestFrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ED56D700189B1F8B81FD2497893A1C /* WithLatestFrom.swift */; };
@@ -109,6 +109,7 @@
 		95DAA35215EC1F0BCADAA89CF8CBCBD6 /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2F1BEFC4DD8A364A5B396BA86E264A /* DispatchQueue+Extensions.swift */; };
 		9664FF038BD3105DEACB1F025EDF9AEA /* Using.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8053AB9DA8E5E9017EF32D868B174059 /* Using.swift */; };
 		9D3C6944187C6F8CB9BD89F7AE721B25 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3ABC80137BC60DCD6B7BFB20C22763 /* Map.swift */; };
+		9EA7E731CBB1039CE5AB59F257123D77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		A03553B55C595A002DBA8F64D981869B /* CompactMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9961253CDBDEF10B6EF4A96F0F83C9 /* CompactMap.swift */; };
 		A271185244AD3B371AE9AD39C49E2725 /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158F58B88F5F995F82A195CDB148B979 /* Lock.swift */; };
 		A2714CB7229C0AEB6668A4BF2CCD2C21 /* EasyDi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2832037C6869173B8EAB2B8EAA5E0392 /* EasyDi.swift */; };
@@ -165,7 +166,6 @@
 		F1AAE7DDCFF46AEFBEB9E3780A04172A /* EasyDi-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CC7A2EDDC30B1DE0DB0B3DF8062C6C /* EasyDi-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F26E1644502C480BE26DE0991409B05E /* Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242A69940B7EDE466C1CA6D1483B3205 /* Range.swift */; };
 		F28BC08D9FF4559838B2ABB3B4E9D50D /* MainScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C4A58AD0EAAFD78C5BCA1188715C9 /* MainScheduler.swift */; };
-		F4A4FCE04AEF6251D83B22276ACBA556 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		F92B8666FECC6578C0BF553F3ACEFE31 /* Timeout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40DE7E6DE05D8AA2F0A213D46CFCB4 /* Timeout.swift */; };
 		FBCB6277F107EDE9004CD58C85ED41DB /* SingleAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162E20133A2CF3AFFD3AFFBDBDE5A9AA /* SingleAsync.swift */; };
 		FBE1E53B2B3C899FB5CFA0F26ACCEABD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
@@ -173,13 +173,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3AAF9CABAE186B0A306F000156D6976C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F16E0DD713AAB4501164ACC1E67208D7;
-			remoteInfo = EasyDi;
-		};
 		3FAEE93DB5B1C2FDE87A04291738F2F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -187,7 +180,21 @@
 			remoteGlobalIDString = EA9EA43B3B503823EE36C60D9C8A865F;
 			remoteInfo = RxSwift;
 		};
+		43BD7F00B02CDC499000049AE455D616 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA9EA43B3B503823EE36C60D9C8A865F;
+			remoteInfo = RxSwift;
+		};
 		8422A634216D7D1C4DB523FBA92FE7F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F16E0DD713AAB4501164ACC1E67208D7;
+			remoteInfo = EasyDi;
+		};
+		E3CA7D6B6E916E3683537CF6321EC5E5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -388,6 +395,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5AAD1186FFAC39F61DEDFE6CA5DFDD5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EA7E731CBB1039CE5AB59F257123D77 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		632D47EB662A2CDDA94BF8DB4967588E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -409,14 +424,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F273B601BEAA997BE877D31CECA1596 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FFB24B278076A60A59DF6AE0FE26C7A3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F4A4FCE04AEF6251D83B22276ACBA556 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -714,6 +721,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		55DD1FDE29E45D81C5FC8E145C8E2CB1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EEB69D4A7755A0EAD8ED6B017DFC7D5 /* Pods-DogHome-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C3F5B833DB2D2F2AD762974D63064320 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -727,14 +742,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C73E11E6C5124B36CC45E2DC8A07308D /* Pods-DogProfile-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D013D2384674AE121AB06ADD5583BD57 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3F8AC600795E1906A52A1DF826A1295C /* Pods-DogHome-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -771,17 +778,18 @@
 		};
 		A266D37D64F5DE6BA070ABFA6D2B5AE6 /* Pods-DogHome */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5870D782B8A8775A70C3596F7BF2F611 /* Build configuration list for PBXNativeTarget "Pods-DogHome" */;
+			buildConfigurationList = 65FFECBB6AE2F42F40FB932183BEFD30 /* Build configuration list for PBXNativeTarget "Pods-DogHome" */;
 			buildPhases = (
-				D013D2384674AE121AB06ADD5583BD57 /* Headers */,
-				F3BE0A9AB7A28EFB2A6132ADD1F462A0 /* Sources */,
-				FFB24B278076A60A59DF6AE0FE26C7A3 /* Frameworks */,
-				36AE377B5935981264DDC4C277E90763 /* Resources */,
+				55DD1FDE29E45D81C5FC8E145C8E2CB1 /* Headers */,
+				ED0C47195BA03CF5B4F26FAAADB557B7 /* Sources */,
+				5AAD1186FFAC39F61DEDFE6CA5DFDD5B /* Frameworks */,
+				A7CA2531EA34A36D19344FD59241D4B0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5A408CCCEDCA57D6D12453F10584428A /* PBXTargetDependency */,
+				CFC7FD2F20B1C65CE620A6651CE7E4A1 /* PBXTargetDependency */,
+				54D73996861E33E4C3298BF0BE8A905E /* PBXTargetDependency */,
 			);
 			name = "Pods-DogHome";
 			productName = "Pods-DogHome";
@@ -862,14 +870,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		36AE377B5935981264DDC4C277E90763 /* Resources */ = {
+		8A1BC437A6BE247E644BF69C6E9A45E6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A1BC437A6BE247E644BF69C6E9A45E6 /* Resources */ = {
+		A7CA2531EA34A36D19344FD59241D4B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -900,6 +908,14 @@
 			files = (
 				EAD0ADF6E7087832D1B39A9C01196C95 /* EasyDi-dummy.m in Sources */,
 				A2714CB7229C0AEB6668A4BF2CCD2C21 /* EasyDi.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED0C47195BA03CF5B4F26FAAADB557B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18890118D5F9FB2A83959F7FACB3D64B /* Pods-DogHome-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1061,14 +1077,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F3BE0A9AB7A28EFB2A6132ADD1F462A0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7CF2AF4077028D2113A1873C7B6E7FD6 /* Pods-DogHome-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1084,11 +1092,17 @@
 			target = F16E0DD713AAB4501164ACC1E67208D7 /* EasyDi */;
 			targetProxy = 8422A634216D7D1C4DB523FBA92FE7F4 /* PBXContainerItemProxy */;
 		};
-		5A408CCCEDCA57D6D12453F10584428A /* PBXTargetDependency */ = {
+		54D73996861E33E4C3298BF0BE8A905E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RxSwift;
+			target = EA9EA43B3B503823EE36C60D9C8A865F /* RxSwift */;
+			targetProxy = 43BD7F00B02CDC499000049AE455D616 /* PBXContainerItemProxy */;
+		};
+		CFC7FD2F20B1C65CE620A6651CE7E4A1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = EasyDi;
 			target = F16E0DD713AAB4501164ACC1E67208D7 /* EasyDi */;
-			targetProxy = 3AAF9CABAE186B0A306F000156D6976C /* PBXContainerItemProxy */;
+			targetProxy = E3CA7D6B6E916E3683537CF6321EC5E5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1188,44 +1202,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		488044B992376B7C654AED2D0AF2997C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9096040C8092F5C07C1F991272D14A1 /* Pods-DogHome.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DogHome/Pods-DogHome-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DogHome/Pods-DogHome.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		6DE2B84F4C7B158029D0A761ADB5C1C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1373,9 +1349,9 @@
 			};
 			name = Debug;
 		};
-		AB7FC4C7C72C4D820F056D556CFB9859 /* Release */ = {
+		D1C4D4C83BE1FB8A5511E18272A92965 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 986244765AB805220144FEE81540BE75 /* Pods-DogHome.release.xcconfig */;
+			baseConfigurationReference = C9096040C8092F5C07C1F991272D14A1 /* Pods-DogHome.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1406,11 +1382,10 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1515,6 +1490,45 @@
 			};
 			name = Release;
 		};
+		FF0B3FAF9A215588DB22237F7AA0CC95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 986244765AB805220144FEE81540BE75 /* Pods-DogHome.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DogHome/Pods-DogHome-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DogHome/Pods-DogHome.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1527,20 +1541,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5870D782B8A8775A70C3596F7BF2F611 /* Build configuration list for PBXNativeTarget "Pods-DogHome" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				488044B992376B7C654AED2D0AF2997C /* Debug */,
-				AB7FC4C7C72C4D820F056D556CFB9859 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		64469BB8F6DA2E47E3D67505F93B9DB0 /* Build configuration list for PBXNativeTarget "EasyDi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				98A22C5D785708A78518F6B3DA6F292B /* Debug */,
 				8EB612D9B24B1B5A9531651A2F807021 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65FFECBB6AE2F42F40FB932183BEFD30 /* Build configuration list for PBXNativeTarget "Pods-DogHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1C4D4C83BE1FB8A5511E18272A92965 /* Debug */,
+				FF0B3FAF9A215588DB22237F7AA0CC95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

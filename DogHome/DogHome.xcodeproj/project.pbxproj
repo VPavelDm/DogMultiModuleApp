@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,6 +28,14 @@
 		E92B6ECF24BDA62700506FD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E92B6ED224BDA62700506FD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E92B6ED424BDA62700506FD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E92B6F2F24BDB3A700506FD1 /* DogProtocols.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DogProtocols.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E92B6F3124BDB45700506FD1 /* DogProfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DogProfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E92B6F3324BDB50B00506FD1 /* DogProfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DogProfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E92B6F3524BDB51B00506FD1 /* DogProfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DogProfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E92B6F3924BDB5A900506FD1 /* DogCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DogCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E92B6F3A24BDB5A900506FD1 /* DogProfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DogProfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E92B6F3B24BDB5A900506FD1 /* DogProtocols.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DogProtocols.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E92B6F4324BDB5EF00506FD1 /* DogProfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DogProfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,14 @@
 		43D468E6D7E4490A4AAE9D6F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E92B6F4324BDB5EF00506FD1 /* DogProfile.framework */,
+				E92B6F3924BDB5A900506FD1 /* DogCore.framework */,
+				E92B6F3A24BDB5A900506FD1 /* DogProfile.framework */,
+				E92B6F3B24BDB5A900506FD1 /* DogProtocols.framework */,
+				E92B6F3524BDB51B00506FD1 /* DogProfile.framework */,
+				E92B6F3324BDB50B00506FD1 /* DogProfile.framework */,
+				E92B6F3124BDB45700506FD1 /* DogProfile.framework */,
+				E92B6F2F24BDB3A700506FD1 /* DogProtocols.framework */,
 				A25EB05C1A468E95449FD703 /* Pods_DogHome.framework */,
 			);
 			name = Frameworks;
@@ -56,7 +72,6 @@
 				1638F9F2B4DF6D457FF619BA /* Pods-DogHome.debug.xcconfig */,
 				DC79ED1BD399721659C8A5C8 /* Pods-DogHome.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

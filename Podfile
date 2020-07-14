@@ -7,6 +7,7 @@ workspace 'DogHome.xcworkspace'
 target 'DogHome' do
   project 'DogHome/DogHome.xcodeproj'
   pod 'EasyDi'
+  pod 'RxSwift'
 end
 
 target 'DogProfile' do
