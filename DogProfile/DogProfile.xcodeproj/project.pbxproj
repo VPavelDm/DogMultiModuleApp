@@ -13,6 +13,8 @@
 		E92B6EF424BDA8BF00506FD1 /* DogProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6EF324BDA8BF00506FD1 /* DogProfileViewModel.swift */; };
 		E92B6EF624BDA8EA00506FD1 /* DogProfileDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6EF524BDA8EA00506FD1 /* DogProfileDI.swift */; };
 		E92B6EF824BDA92300506FD1 /* DogProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6EF724BDA92300506FD1 /* DogProfilePresenter.swift */; };
+		E92B6F1524BDAB1100506FD1 /* DogProtocols.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B6F1424BDAB1100506FD1 /* DogProtocols.framework */; };
+		E92B6F2E24BDAE4E00506FD1 /* DogCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B6F2D24BDAE4E00506FD1 /* DogCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		E92B6EF324BDA8BF00506FD1 /* DogProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogProfileViewModel.swift; sourceTree = "<group>"; };
 		E92B6EF524BDA8EA00506FD1 /* DogProfileDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogProfileDI.swift; sourceTree = "<group>"; };
 		E92B6EF724BDA92300506FD1 /* DogProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogProfilePresenter.swift; sourceTree = "<group>"; };
+		E92B6F1024BDAACE00506FD1 /* DogProtocols.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DogProtocols.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E92B6F1424BDAB1100506FD1 /* DogProtocols.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DogProtocols.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E92B6F2D24BDAE4E00506FD1 /* DogCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DogCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,7 +38,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E92B6F2E24BDAE4E00506FD1 /* DogCore.framework in Frameworks */,
 				AA174D48C6F1DE66411F4834 /* Pods_DogProfile.framework in Frameworks */,
+				E92B6F1524BDAB1100506FD1 /* DogProtocols.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +60,9 @@
 		D500815E3FF6E838DA62C288 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E92B6F2D24BDAE4E00506FD1 /* DogCore.framework */,
+				E92B6F1424BDAB1100506FD1 /* DogProtocols.framework */,
+				E92B6F1024BDAACE00506FD1 /* DogProtocols.framework */,
 				E127EADEB6093B067432247B /* Pods_DogProfile.framework */,
 			);
 			name = Frameworks;

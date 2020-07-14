@@ -7,9 +7,21 @@
 //
 
 import EasyDi
+import DogProtocols
 
-class DogProfileDI: Assembly {
-    var view: DogProfileViewController {
-        define(init: DogProfileViewController())
+public class DogProfileDI: Assembly, DogProfileProtocol {
+    public func getDogProfile(id: String) -> UIViewController {
+        createView(id: id)
+    }
+
+    private func createView(id: String) -> UIViewController {
+        define(init: DogProfileViewController()) {
+            $0.presenter = self.createPresenter(id: id)
+            return $0
+        }
+    }
+
+    private func createPresenter(id: String) -> DogProfilePresenterProtocol {
+        define(init: DogProfilePresenter(id: id))
     }
 }

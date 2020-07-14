@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:DogCore/DogCore.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:DogProtocols/DogProtocols.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:DogProfile/DogProfile.xcodeproj">
    </FileRef>
    <FileRef
