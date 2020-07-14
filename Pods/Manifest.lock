@@ -1,16 +1,20 @@
 PODS:
   - EasyDi (1.6.1)
+  - RxSwift (5.1.0)
 
 DEPENDENCIES:
   - EasyDi
+  - RxSwift
 
 SPEC REPOS:
   trunk:
     - EasyDi
+    - RxSwift
 
 SPEC CHECKSUMS:
   EasyDi: 3d7d4c0d3ad2d78b3ff22d4755590d32945f69cc
+  RxSwift: ad5874f24bb0dbffd1e9bb8443604e3578796c7a
 
-PODFILE CHECKSUM: 6bc61c1f69ff199d9f9104f38693e5004f49fb3c
+PODFILE CHECKSUM: 4c2fc78ef61ed2f07de09dbc7ec408668e8e423e
 
 COCOAPODS: 1.9.3

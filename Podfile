@@ -8,3 +8,9 @@ target 'DogHome' do
   project 'DogHome/DogHome.xcodeproj'
   pod 'EasyDi'
 end
+
+target 'DogProfile' do
+  project 'DogProfile/DogProfile.xcodeproj'
+  pod 'EasyDi'
+  pod 'RxSwift'
+end

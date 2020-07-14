@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Bg-ev-sAK">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dog Profile View Controller-->
+        <scene sceneID="tnt-rQ-KPZ">
+            <objects>
+                <viewController id="7Bg-ev-sAK" customClass="DogProfileViewController" customModule="DogProfile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3xh-9r-d4A">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ual-a2-JEg">
+                                <rect key="frame" x="87" y="106.5" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ual-a2-JEg" secondAttribute="height" multiplier="1:1" id="DZL-gJ-Pc9"/>
+                                    <constraint firstAttribute="width" constant="240" id="jyR-fW-TkW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqC-lQ-MEJ">
+                                <rect key="frame" x="176" y="354.5" width="62.5" height="31.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ual-a2-JEg" firstAttribute="centerX" secondItem="DHE-rZ-jhq" secondAttribute="centerX" id="IMi-ej-oVL"/>
+                            <constraint firstItem="fqC-lQ-MEJ" firstAttribute="top" secondItem="ual-a2-JEg" secondAttribute="bottom" constant="8" symbolic="YES" id="LYP-If-mg0"/>
+                            <constraint firstItem="fqC-lQ-MEJ" firstAttribute="centerX" secondItem="ual-a2-JEg" secondAttribute="centerX" id="a7F-WT-Qj7"/>
+                            <constraint firstItem="ual-a2-JEg" firstAttribute="centerY" secondItem="DHE-rZ-jhq" secondAttribute="centerY" multiplier="0.5" id="vPI-CR-iYj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DHE-rZ-jhq"/>
+                    </view>
+                    <connections>
+                        <outlet property="dogImage" destination="ual-a2-JEg" id="1vf-jV-0cQ"/>
+                        <outlet property="nameLabel" destination="fqC-lQ-MEJ" id="mE1-Dk-6na"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pxT-kB-gNc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="108"/>
+        </scene>
+    </scenes>
+</document>
