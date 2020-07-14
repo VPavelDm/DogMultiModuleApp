@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62F0D44D369EF0E1EB11555F /* Pods_DogHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A25EB05C1A468E95449FD703 /* Pods_DogHome.framework */; };
 		E92B6EC724BDA62300506FD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6EC624BDA62300506FD1 /* AppDelegate.swift */; };
 		E92B6EC924BDA62300506FD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6EC824BDA62300506FD1 /* SceneDelegate.swift */; };
 		E92B6ECB24BDA62300506FD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6ECA24BDA62300506FD1 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1638F9F2B4DF6D457FF619BA /* Pods-DogHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogHome.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-DogHome/Pods-DogHome.debug.xcconfig"; sourceTree = "<group>"; };
+		A25EB05C1A468E95449FD703 /* Pods_DogHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DogHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC79ED1BD399721659C8A5C8 /* Pods-DogHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogHome.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-DogHome/Pods-DogHome.release.xcconfig"; sourceTree = "<group>"; };
 		E92B6EC324BDA62300506FD1 /* DogHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92B6EC624BDA62300506FD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E92B6EC824BDA62300506FD1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62F0D44D369EF0E1EB11555F /* Pods_DogHome.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43D468E6D7E4490A4AAE9D6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A25EB05C1A468E95449FD703 /* Pods_DogHome.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3932A734DBDB659F6462B81 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1638F9F2B4DF6D457FF619BA /* Pods-DogHome.debug.xcconfig */,
+				DC79ED1BD399721659C8A5C8 /* Pods-DogHome.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E92B6EBA24BDA62300506FD1 = {
 			isa = PBXGroup;
 			children = (
 				E92B6EC524BDA62300506FD1 /* DogHome */,
 				E92B6EC424BDA62300506FD1 /* Products */,
+				A3932A734DBDB659F6462B81 /* Pods */,
+				43D468E6D7E4490A4AAE9D6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E92B6ED724BDA62700506FD1 /* Build configuration list for PBXNativeTarget "DogHome" */;
 			buildPhases = (
+				CE145E5954E180BD5DC3A34C /* [CP] Check Pods Manifest.lock */,
 				E92B6EBF24BDA62300506FD1 /* Sources */,
 				E92B6EC024BDA62300506FD1 /* Frameworks */,
 				E92B6EC124BDA62300506FD1 /* Resources */,
+				2B00F20D36DEBA1B15E17B8B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B00F20D36DEBA1B15E17B8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DogHome/Pods-DogHome-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DogHome/Pods-DogHome-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DogHome/Pods-DogHome-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE145E5954E180BD5DC3A34C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DogHome-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E92B6EBF24BDA62300506FD1 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		E92B6ED824BDA62700506FD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1638F9F2B4DF6D457FF619BA /* Pods-DogHome.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		E92B6ED924BDA62700506FD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC79ED1BD399721659C8A5C8 /* Pods-DogHome.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
