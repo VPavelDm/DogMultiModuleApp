@@ -7,106 +7,95 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA174D48C6F1DE66411F4834 /* Pods_DogProfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E127EADEB6093B067432247B /* Pods_DogProfile.framework */; };
-		E92B6EF024BDA82A00506FD1 /* DogProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92B6EEF24BDA82A00506FD1 /* DogProfileViewController.storyboard */; };
-		E92B6EF224BDA87500506FD1 /* DogProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6EF124BDA87500506FD1 /* DogProfileViewController.swift */; };
-		E92B6EF424BDA8BF00506FD1 /* DogProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6EF324BDA8BF00506FD1 /* DogProfileViewModel.swift */; };
-		E92B6EF624BDA8EA00506FD1 /* DogProfileDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6EF524BDA8EA00506FD1 /* DogProfileDI.swift */; };
-		E92B6EF824BDA92300506FD1 /* DogProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6EF724BDA92300506FD1 /* DogProfilePresenter.swift */; };
-		E92B6F4F24BDB8D800506FD1 /* DogCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B6F4E24BDB8D800506FD1 /* DogCore.framework */; };
-		E92B6F5124BDB8D800506FD1 /* DogProtocols.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B6F5024BDB8D800506FD1 /* DogProtocols.framework */; };
+		C962D551D8D4094CDAFC5692 /* Pods_DogListing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43286A02CFFFDB54923ED39F /* Pods_DogListing.framework */; };
+		E92B6F6824BEE33900506FD1 /* DogListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6F6724BEE33900506FD1 /* DogListingViewController.swift */; };
+		E92B6F6A24BEE35C00506FD1 /* DogListingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92B6F6924BEE35C00506FD1 /* DogListingViewController.storyboard */; };
+		E92B6F6C24BEE42000506FD1 /* DogListingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6F6B24BEE42000506FD1 /* DogListingCell.swift */; };
+		E92B6F6E24BEE5CC00506FD1 /* DogListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6F6D24BEE5CC00506FD1 /* DogListingViewModel.swift */; };
+		E92B6F7024BEE6BC00506FD1 /* DogListingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6F6F24BEE6BC00506FD1 /* DogListingPresenter.swift */; };
+		E92B6F7224BEE96A00506FD1 /* DogListingDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6F7124BEE96A00506FD1 /* DogListingDI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4ECF7FA7D99A13D2619A3BDC /* Pods-DogProfile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogProfile.debug.xcconfig"; path = "Target Support Files/Pods-DogProfile/Pods-DogProfile.debug.xcconfig"; sourceTree = "<group>"; };
-		541D5F393B789B327AAC3033 /* Pods-DogProfile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogProfile.release.xcconfig"; path = "Target Support Files/Pods-DogProfile/Pods-DogProfile.release.xcconfig"; sourceTree = "<group>"; };
-		E127EADEB6093B067432247B /* Pods_DogProfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DogProfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E92B6EE424BDA71900506FD1 /* DogProfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DogProfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E92B6EE824BDA71900506FD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E92B6EEF24BDA82A00506FD1 /* DogProfileViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DogProfileViewController.storyboard; sourceTree = "<group>"; };
-		E92B6EF124BDA87500506FD1 /* DogProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogProfileViewController.swift; sourceTree = "<group>"; };
-		E92B6EF324BDA8BF00506FD1 /* DogProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogProfileViewModel.swift; sourceTree = "<group>"; };
-		E92B6EF524BDA8EA00506FD1 /* DogProfileDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogProfileDI.swift; sourceTree = "<group>"; };
-		E92B6EF724BDA92300506FD1 /* DogProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogProfilePresenter.swift; sourceTree = "<group>"; };
-		E92B6F1024BDAACE00506FD1 /* DogProtocols.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DogProtocols.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E92B6F1424BDAB1100506FD1 /* DogProtocols.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DogProtocols.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E92B6F2D24BDAE4E00506FD1 /* DogCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DogCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E92B6F4E24BDB8D800506FD1 /* DogCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DogCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E92B6F5024BDB8D800506FD1 /* DogProtocols.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DogProtocols.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43286A02CFFFDB54923ED39F /* Pods_DogListing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DogListing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CDB831144A93CB4A3DF75CB /* Pods-DogListing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogListing.debug.xcconfig"; path = "Target Support Files/Pods-DogListing/Pods-DogListing.debug.xcconfig"; sourceTree = "<group>"; };
+		B61B935A1A1C7FCBE7695028 /* Pods-DogListing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogListing.release.xcconfig"; path = "Target Support Files/Pods-DogListing/Pods-DogListing.release.xcconfig"; sourceTree = "<group>"; };
+		E92B6F5C24BDB91C00506FD1 /* DogListing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DogListing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E92B6F6024BDB91C00506FD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E92B6F6724BEE33900506FD1 /* DogListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListingViewController.swift; sourceTree = "<group>"; };
+		E92B6F6924BEE35C00506FD1 /* DogListingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DogListingViewController.storyboard; sourceTree = "<group>"; };
+		E92B6F6B24BEE42000506FD1 /* DogListingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListingCell.swift; sourceTree = "<group>"; };
+		E92B6F6D24BEE5CC00506FD1 /* DogListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListingViewModel.swift; sourceTree = "<group>"; };
+		E92B6F6F24BEE6BC00506FD1 /* DogListingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListingPresenter.swift; sourceTree = "<group>"; };
+		E92B6F7124BEE96A00506FD1 /* DogListingDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListingDI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E92B6EE124BDA71900506FD1 /* Frameworks */ = {
+		E92B6F5924BDB91C00506FD1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E92B6F5124BDB8D800506FD1 /* DogProtocols.framework in Frameworks */,
-				E92B6F4F24BDB8D800506FD1 /* DogCore.framework in Frameworks */,
-				AA174D48C6F1DE66411F4834 /* Pods_DogProfile.framework in Frameworks */,
+				C962D551D8D4094CDAFC5692 /* Pods_DogListing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B44654AE15B1448411D38DD3 /* Pods */ = {
+		8B5506737CDE8DD5FD3E7D03 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4ECF7FA7D99A13D2619A3BDC /* Pods-DogProfile.debug.xcconfig */,
-				541D5F393B789B327AAC3033 /* Pods-DogProfile.release.xcconfig */,
+				43286A02CFFFDB54923ED39F /* Pods_DogListing.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D008CE2DA0E8C6B8F171DEB1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4CDB831144A93CB4A3DF75CB /* Pods-DogListing.debug.xcconfig */,
+				B61B935A1A1C7FCBE7695028 /* Pods-DogListing.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
 			sourceTree = "<group>";
 		};
-		D500815E3FF6E838DA62C288 /* Frameworks */ = {
+		E92B6F5224BDB91C00506FD1 = {
 			isa = PBXGroup;
 			children = (
-				E92B6F4E24BDB8D800506FD1 /* DogCore.framework */,
-				E92B6F5024BDB8D800506FD1 /* DogProtocols.framework */,
-				E92B6F2D24BDAE4E00506FD1 /* DogCore.framework */,
-				E92B6F1424BDAB1100506FD1 /* DogProtocols.framework */,
-				E92B6F1024BDAACE00506FD1 /* DogProtocols.framework */,
-				E127EADEB6093B067432247B /* Pods_DogProfile.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E92B6EDA24BDA71900506FD1 = {
-			isa = PBXGroup;
-			children = (
-				E92B6EE624BDA71900506FD1 /* DogProfile */,
-				E92B6EE524BDA71900506FD1 /* Products */,
-				B44654AE15B1448411D38DD3 /* Pods */,
-				D500815E3FF6E838DA62C288 /* Frameworks */,
+				E92B6F5E24BDB91C00506FD1 /* DogListing */,
+				E92B6F5D24BDB91C00506FD1 /* Products */,
+				D008CE2DA0E8C6B8F171DEB1 /* Pods */,
+				8B5506737CDE8DD5FD3E7D03 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		E92B6EE524BDA71900506FD1 /* Products */ = {
+		E92B6F5D24BDB91C00506FD1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E92B6EE424BDA71900506FD1 /* DogProfile.framework */,
+				E92B6F5C24BDB91C00506FD1 /* DogListing.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E92B6EE624BDA71900506FD1 /* DogProfile */ = {
+		E92B6F5E24BDB91C00506FD1 /* DogListing */ = {
 			isa = PBXGroup;
 			children = (
-				E92B6EE824BDA71900506FD1 /* Info.plist */,
-				E92B6EEF24BDA82A00506FD1 /* DogProfileViewController.storyboard */,
-				E92B6EF124BDA87500506FD1 /* DogProfileViewController.swift */,
-				E92B6EF324BDA8BF00506FD1 /* DogProfileViewModel.swift */,
-				E92B6EF524BDA8EA00506FD1 /* DogProfileDI.swift */,
-				E92B6EF724BDA92300506FD1 /* DogProfilePresenter.swift */,
+				E92B6F6024BDB91C00506FD1 /* Info.plist */,
+				E92B6F6724BEE33900506FD1 /* DogListingViewController.swift */,
+				E92B6F6924BEE35C00506FD1 /* DogListingViewController.storyboard */,
+				E92B6F6B24BEE42000506FD1 /* DogListingCell.swift */,
+				E92B6F6D24BEE5CC00506FD1 /* DogListingViewModel.swift */,
+				E92B6F6F24BEE6BC00506FD1 /* DogListingPresenter.swift */,
+				E92B6F7124BEE96A00506FD1 /* DogListingDI.swift */,
 			);
-			path = DogProfile;
+			path = DogListing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		E92B6EDF24BDA71900506FD1 /* Headers */ = {
+		E92B6F5724BDB91C00506FD1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -116,41 +105,41 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		E92B6EE324BDA71900506FD1 /* DogProfile */ = {
+		E92B6F5B24BDB91C00506FD1 /* DogListing */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E92B6EEC24BDA71900506FD1 /* Build configuration list for PBXNativeTarget "DogProfile" */;
+			buildConfigurationList = E92B6F6424BDB91C00506FD1 /* Build configuration list for PBXNativeTarget "DogListing" */;
 			buildPhases = (
-				509CB1A3C5BDF4C001E9CDF4 /* [CP] Check Pods Manifest.lock */,
-				E92B6EDF24BDA71900506FD1 /* Headers */,
-				E92B6EE024BDA71900506FD1 /* Sources */,
-				E92B6EE124BDA71900506FD1 /* Frameworks */,
-				E92B6EE224BDA71900506FD1 /* Resources */,
+				BD25E6CDBCF97A1C3F8870D1 /* [CP] Check Pods Manifest.lock */,
+				E92B6F5724BDB91C00506FD1 /* Headers */,
+				E92B6F5824BDB91C00506FD1 /* Sources */,
+				E92B6F5924BDB91C00506FD1 /* Frameworks */,
+				E92B6F5A24BDB91C00506FD1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = DogProfile;
-			productName = DogProfile;
-			productReference = E92B6EE424BDA71900506FD1 /* DogProfile.framework */;
+			name = DogListing;
+			productName = DogListing;
+			productReference = E92B6F5C24BDB91C00506FD1 /* DogListing.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E92B6EDB24BDA71900506FD1 /* Project object */ = {
+		E92B6F5324BDB91C00506FD1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = vpaveldm;
 				TargetAttributes = {
-					E92B6EE324BDA71900506FD1 = {
+					E92B6F5B24BDB91C00506FD1 = {
 						CreatedOnToolsVersion = 11.4.1;
 						LastSwiftMigration = 1140;
 					};
 				};
 			};
-			buildConfigurationList = E92B6EDE24BDA71900506FD1 /* Build configuration list for PBXProject "DogProfile" */;
+			buildConfigurationList = E92B6F5624BDB91C00506FD1 /* Build configuration list for PBXProject "DogListing" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -158,29 +147,29 @@
 				en,
 				Base,
 			);
-			mainGroup = E92B6EDA24BDA71900506FD1;
-			productRefGroup = E92B6EE524BDA71900506FD1 /* Products */;
+			mainGroup = E92B6F5224BDB91C00506FD1;
+			productRefGroup = E92B6F5D24BDB91C00506FD1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E92B6EE324BDA71900506FD1 /* DogProfile */,
+				E92B6F5B24BDB91C00506FD1 /* DogListing */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E92B6EE224BDA71900506FD1 /* Resources */ = {
+		E92B6F5A24BDB91C00506FD1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E92B6EF024BDA82A00506FD1 /* DogProfileViewController.storyboard in Resources */,
+				E92B6F6A24BEE35C00506FD1 /* DogListingViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		509CB1A3C5BDF4C001E9CDF4 /* [CP] Check Pods Manifest.lock */ = {
+		BD25E6CDBCF97A1C3F8870D1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -195,7 +184,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DogProfile-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-DogListing-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -205,21 +194,22 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E92B6EE024BDA71900506FD1 /* Sources */ = {
+		E92B6F5824BDB91C00506FD1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E92B6EF224BDA87500506FD1 /* DogProfileViewController.swift in Sources */,
-				E92B6EF424BDA8BF00506FD1 /* DogProfileViewModel.swift in Sources */,
-				E92B6EF624BDA8EA00506FD1 /* DogProfileDI.swift in Sources */,
-				E92B6EF824BDA92300506FD1 /* DogProfilePresenter.swift in Sources */,
+				E92B6F7024BEE6BC00506FD1 /* DogListingPresenter.swift in Sources */,
+				E92B6F6824BEE33900506FD1 /* DogListingViewController.swift in Sources */,
+				E92B6F6C24BEE42000506FD1 /* DogListingCell.swift in Sources */,
+				E92B6F7224BEE96A00506FD1 /* DogListingDI.swift in Sources */,
+				E92B6F6E24BEE5CC00506FD1 /* DogListingViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		E92B6EEA24BDA71900506FD1 /* Debug */ = {
+		E92B6F6224BDB91C00506FD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -282,7 +272,7 @@
 			};
 			name = Debug;
 		};
-		E92B6EEB24BDA71900506FD1 /* Release */ = {
+		E92B6F6324BDB91C00506FD1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -339,9 +329,9 @@
 			};
 			name = Release;
 		};
-		E92B6EED24BDA71900506FD1 /* Debug */ = {
+		E92B6F6524BDB91C00506FD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4ECF7FA7D99A13D2619A3BDC /* Pods-DogProfile.debug.xcconfig */;
+			baseConfigurationReference = 4CDB831144A93CB4A3DF75CB /* Pods-DogListing.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -350,14 +340,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = DogProfile/Info.plist;
+				INFOPLIST_FILE = DogListing/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vpaveldm.icecream.DogProfile;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vpaveldm.icecream.DogListing;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -366,9 +356,9 @@
 			};
 			name = Debug;
 		};
-		E92B6EEE24BDA71900506FD1 /* Release */ = {
+		E92B6F6624BDB91C00506FD1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 541D5F393B789B327AAC3033 /* Pods-DogProfile.release.xcconfig */;
+			baseConfigurationReference = B61B935A1A1C7FCBE7695028 /* Pods-DogListing.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -377,14 +367,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = DogProfile/Info.plist;
+				INFOPLIST_FILE = DogListing/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vpaveldm.icecream.DogProfile;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vpaveldm.icecream.DogListing;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -395,25 +385,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E92B6EDE24BDA71900506FD1 /* Build configuration list for PBXProject "DogProfile" */ = {
+		E92B6F5624BDB91C00506FD1 /* Build configuration list for PBXProject "DogListing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E92B6EEA24BDA71900506FD1 /* Debug */,
-				E92B6EEB24BDA71900506FD1 /* Release */,
+				E92B6F6224BDB91C00506FD1 /* Debug */,
+				E92B6F6324BDB91C00506FD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E92B6EEC24BDA71900506FD1 /* Build configuration list for PBXNativeTarget "DogProfile" */ = {
+		E92B6F6424BDB91C00506FD1 /* Build configuration list for PBXNativeTarget "DogListing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E92B6EED24BDA71900506FD1 /* Debug */,
-				E92B6EEE24BDA71900506FD1 /* Release */,
+				E92B6F6524BDB91C00506FD1 /* Debug */,
+				E92B6F6624BDB91C00506FD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E92B6EDB24BDA71900506FD1 /* Project object */;
+	rootObject = E92B6F5324BDB91C00506FD1 /* Project object */;
 }

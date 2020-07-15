@@ -14,7 +14,26 @@
 		E92B6ECE24BDA62300506FD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92B6ECC24BDA62300506FD1 /* Main.storyboard */; };
 		E92B6ED024BDA62700506FD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E92B6ECF24BDA62700506FD1 /* Assets.xcassets */; };
 		E92B6ED324BDA62700506FD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92B6ED124BDA62700506FD1 /* LaunchScreen.storyboard */; };
+		E92B6F4924BDB8BF00506FD1 /* DogProfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B6F4724BDB8BF00506FD1 /* DogProfile.framework */; };
+		E92B6F4A24BDB8BF00506FD1 /* DogProfile.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E92B6F4724BDB8BF00506FD1 /* DogProfile.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E92B6F4B24BDB8BF00506FD1 /* DogProtocols.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B6F4824BDB8BF00506FD1 /* DogProtocols.framework */; };
+		E92B6F4C24BDB8BF00506FD1 /* DogProtocols.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E92B6F4824BDB8BF00506FD1 /* DogProtocols.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E92B6F4D24BDB8BF00506FD1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E92B6F4A24BDB8BF00506FD1 /* DogProfile.framework in Embed Frameworks */,
+				E92B6F4C24BDB8BF00506FD1 /* DogProtocols.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1638F9F2B4DF6D457FF619BA /* Pods-DogHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogHome.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-DogHome/Pods-DogHome.debug.xcconfig"; sourceTree = "<group>"; };
@@ -36,6 +55,8 @@
 		E92B6F3A24BDB5A900506FD1 /* DogProfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DogProfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92B6F3B24BDB5A900506FD1 /* DogProtocols.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DogProtocols.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92B6F4324BDB5EF00506FD1 /* DogProfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DogProfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E92B6F4724BDB8BF00506FD1 /* DogProfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DogProfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E92B6F4824BDB8BF00506FD1 /* DogProtocols.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DogProtocols.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +64,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E92B6F4B24BDB8BF00506FD1 /* DogProtocols.framework in Frameworks */,
 				62F0D44D369EF0E1EB11555F /* Pods_DogHome.framework in Frameworks */,
+				E92B6F4924BDB8BF00506FD1 /* DogProfile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +76,8 @@
 		43D468E6D7E4490A4AAE9D6F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E92B6F4724BDB8BF00506FD1 /* DogProfile.framework */,
+				E92B6F4824BDB8BF00506FD1 /* DogProtocols.framework */,
 				E92B6F4324BDB5EF00506FD1 /* DogProfile.framework */,
 				E92B6F3924BDB5A900506FD1 /* DogCore.framework */,
 				E92B6F3A24BDB5A900506FD1 /* DogProfile.framework */,
@@ -119,6 +144,7 @@
 				E92B6EC024BDA62300506FD1 /* Frameworks */,
 				E92B6EC124BDA62300506FD1 /* Resources */,
 				2B00F20D36DEBA1B15E17B8B /* [CP] Embed Pods Frameworks */,
+				E92B6F4D24BDB8BF00506FD1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

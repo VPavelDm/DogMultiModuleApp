@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NaH-pV-hzb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dog Listing View Controller-->
+        <scene sceneID="PKX-iZ-uM7">
+            <objects>
+                <viewController id="NaH-pV-hzb" customClass="DogListingViewController" customModule="DogListing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iBG-s4-REY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pqL-Qs-Z8H">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DogListingCell" id="9ke-ro-z5v" customClass="DogListingCell" customModule="DogListing" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="100.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9ke-ro-z5v" id="Qck-H1-Ibk">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kwg-EG-0iu">
+                                                    <rect key="frame" x="20" y="20" width="60" height="60.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="Ica-hp-Wwu"/>
+                                                        <constraint firstAttribute="width" secondItem="Kwg-EG-0iu" secondAttribute="height" multiplier="1:1" id="voI-Ch-XXq"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ErA-LY-63Z">
+                                                    <rect key="frame" x="88" y="24" width="45.5" height="23"/>
+                                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="21"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Kwg-EG-0iu" firstAttribute="leading" secondItem="Qck-H1-Ibk" secondAttribute="leading" constant="20" symbolic="YES" id="Cu5-D5-UhQ"/>
+                                                <constraint firstItem="ErA-LY-63Z" firstAttribute="leading" secondItem="Kwg-EG-0iu" secondAttribute="trailing" constant="8" symbolic="YES" id="Grs-ph-mCx"/>
+                                                <constraint firstItem="Kwg-EG-0iu" firstAttribute="top" secondItem="Qck-H1-Ibk" secondAttribute="top" constant="20" symbolic="YES" id="Js7-sd-P2g"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ErA-LY-63Z" secondAttribute="trailing" constant="20" symbolic="YES" id="W7v-bG-5yi"/>
+                                                <constraint firstAttribute="bottom" secondItem="Kwg-EG-0iu" secondAttribute="bottom" constant="20" symbolic="YES" id="bkY-21-YYA"/>
+                                                <constraint firstItem="ErA-LY-63Z" firstAttribute="top" secondItem="Kwg-EG-0iu" secondAttribute="top" constant="4" id="oE8-OX-Bal"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dogImage" destination="Kwg-EG-0iu" id="Rs9-kD-GKN"/>
+                                            <outlet property="dogName" destination="ErA-LY-63Z" id="wtn-kA-RAn"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="NaH-pV-hzb" id="AVb-LR-srf"/>
+                                    <outlet property="delegate" destination="NaH-pV-hzb" id="5zw-kI-kYD"/>
+                                </connections>
+                            </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="1MI-nk-RZI">
+                                <rect key="frame" x="197" y="443" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1MI-nk-RZI" firstAttribute="centerY" secondItem="huJ-wO-F9A" secondAttribute="centerY" id="65u-U7-C4j"/>
+                            <constraint firstAttribute="bottom" secondItem="pqL-Qs-Z8H" secondAttribute="bottom" id="Lm6-wu-VEk"/>
+                            <constraint firstItem="1MI-nk-RZI" firstAttribute="centerX" secondItem="huJ-wO-F9A" secondAttribute="centerX" id="Nn1-Bk-lzp"/>
+                            <constraint firstItem="pqL-Qs-Z8H" firstAttribute="leading" secondItem="huJ-wO-F9A" secondAttribute="leading" id="fwk-dX-xqz"/>
+                            <constraint firstItem="huJ-wO-F9A" firstAttribute="trailing" secondItem="pqL-Qs-Z8H" secondAttribute="trailing" id="lma-ne-E1D"/>
+                            <constraint firstItem="pqL-Qs-Z8H" firstAttribute="top" secondItem="huJ-wO-F9A" secondAttribute="top" id="qsF-e9-eIt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="huJ-wO-F9A"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="1MI-nk-RZI" id="fWY-06-WH6"/>
+                        <outlet property="tableView" destination="pqL-Qs-Z8H" id="NVm-rO-6P1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DIr-PT-BhU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.98550724637681" y="107.8125"/>
+        </scene>
+    </scenes>
+</document>

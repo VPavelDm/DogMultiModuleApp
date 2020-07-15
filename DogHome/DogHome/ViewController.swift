@@ -8,7 +8,7 @@
 
 import UIKit
 import DogProtocols
-import DogProfile
+import DogListing
 
 class ViewController: UIViewController {
 
@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func clickMeIsPressed(_ sender: Any) {
-        let view = DogProfileDI.instance().getDogProfile(id: "123")
+        let view = DogListingDI.instance().getDogListing()
         navigationController?.pushViewController(view, animated: true)
     }
     
