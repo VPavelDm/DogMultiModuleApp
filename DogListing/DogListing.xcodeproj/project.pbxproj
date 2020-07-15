@@ -14,6 +14,7 @@
 		E92B6F6E24BEE5CC00506FD1 /* DogListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6F6D24BEE5CC00506FD1 /* DogListingViewModel.swift */; };
 		E92B6F7024BEE6BC00506FD1 /* DogListingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6F6F24BEE6BC00506FD1 /* DogListingPresenter.swift */; };
 		E92B6F7224BEE96A00506FD1 /* DogListingDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6F7124BEE96A00506FD1 /* DogListingDI.swift */; };
+		E92B6F7624BEF30500506FD1 /* DogListingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6F7524BEF30500506FD1 /* DogListingRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E92B6F6D24BEE5CC00506FD1 /* DogListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListingViewModel.swift; sourceTree = "<group>"; };
 		E92B6F6F24BEE6BC00506FD1 /* DogListingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListingPresenter.swift; sourceTree = "<group>"; };
 		E92B6F7124BEE96A00506FD1 /* DogListingDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListingDI.swift; sourceTree = "<group>"; };
+		E92B6F7524BEF30500506FD1 /* DogListingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListingRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				E92B6F6D24BEE5CC00506FD1 /* DogListingViewModel.swift */,
 				E92B6F6F24BEE6BC00506FD1 /* DogListingPresenter.swift */,
 				E92B6F7124BEE96A00506FD1 /* DogListingDI.swift */,
+				E92B6F7524BEF30500506FD1 /* DogListingRouter.swift */,
 			);
 			path = DogListing;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E92B6F7624BEF30500506FD1 /* DogListingRouter.swift in Sources */,
 				E92B6F7024BEE6BC00506FD1 /* DogListingPresenter.swift in Sources */,
 				E92B6F6824BEE33900506FD1 /* DogListingViewController.swift in Sources */,
 				E92B6F6C24BEE42000506FD1 /* DogListingCell.swift in Sources */,

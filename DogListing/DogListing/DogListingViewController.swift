@@ -76,4 +76,8 @@ extension DogListingViewController: UITableViewDelegate, UITableViewDataSource {
         }
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter.showDogDetail(at: indexPath.row)
+    }
 }

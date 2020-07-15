@@ -21,12 +21,19 @@ public class DogListingDI: Assembly, DogListingProtocol {
                                       bundle: Bundle(for: DogListingDI.self))
         let view = storyboard.instantiateInitialViewController() as! DogListingViewController
         return define(init: view) {
-            $0.presenter = self.createPresenter()
+            $0.presenter = self.createPresenter(view: $0)
             return $0
         }
     }
 
-    private func createPresenter() -> DogListingPresenterProtocol {
-        define(init: DogListingPresenter())
+    private func createPresenter(view: UIViewController) -> DogListingPresenterProtocol {
+        define(init: DogListingPresenter()) {
+            $0.router = self.createRouter(view: view)
+            return $0
+        }
+    }
+    
+    private func createRouter(view: UIViewController) -> DogListingRouterProtocol {
+        define(init: DogListingRouter(viewController: view, mediator: self.mediator))
     }
 }
