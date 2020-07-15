@@ -21,3 +21,8 @@ target 'DogListing' do
   pod 'EasyDi'
   pod 'RxSwift'
 end
+
+target 'DogNetwork' do
+  project 'DogNetwork/DogNetwork.xcodeproj'
+  pod 'EasyDi'
+end

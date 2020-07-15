@@ -8,6 +8,8 @@
 
 import UIKit
 
+public typealias JSON = Any
+
 public protocol DogProfileProtocol {
     var mediator: DogGlobalMediatorProtocol! { get }
     func getDogProfile(id: String) -> UIViewController
@@ -18,7 +20,12 @@ public protocol DogListingProtocol {
     func getDogListing() -> UIViewController
 }
 
+public protocol DogNetworkManagerProtocol {
+    func loadDogs(completion: @escaping (Result<JSON, Error>) -> Void)
+}
+
 public protocol DogGlobalMediatorProtocol {
     func getDogProfileProtocol() -> DogProfileProtocol
     func getDogListingProtocol() -> DogListingProtocol
+    func getDogNetwork() -> DogNetworkManagerProtocol
 }

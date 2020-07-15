@@ -7,101 +7,83 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C962D551D8D4094CDAFC5692 /* Pods_DogListing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43286A02CFFFDB54923ED39F /* Pods_DogListing.framework */; };
-		E92B6F6824BEE33900506FD1 /* DogListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6F6724BEE33900506FD1 /* DogListingViewController.swift */; };
-		E92B6F6A24BEE35C00506FD1 /* DogListingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92B6F6924BEE35C00506FD1 /* DogListingViewController.storyboard */; };
-		E92B6F6C24BEE42000506FD1 /* DogListingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6F6B24BEE42000506FD1 /* DogListingCell.swift */; };
-		E92B6F6E24BEE5CC00506FD1 /* DogListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6F6D24BEE5CC00506FD1 /* DogListingViewModel.swift */; };
-		E92B6F7024BEE6BC00506FD1 /* DogListingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6F6F24BEE6BC00506FD1 /* DogListingPresenter.swift */; };
-		E92B6F7224BEE96A00506FD1 /* DogListingDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6F7124BEE96A00506FD1 /* DogListingDI.swift */; };
-		E92B6F7624BEF30500506FD1 /* DogListingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6F7524BEF30500506FD1 /* DogListingRouter.swift */; };
-		E92B6F9124BF0FAF00506FD1 /* DogListingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6F9024BF0FAF00506FD1 /* DogListingInteractor.swift */; };
+		3897E385FF7CAF90C5C1E31E /* Pods_DogNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3633B6969C6C5446C2C7F28D /* Pods_DogNetwork.framework */; };
+		E92B6F8D24BEFA8A00506FD1 /* DogNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6F8C24BEFA8A00506FD1 /* DogNetworkManager.swift */; };
+		E92B6F8F24BF0E1000506FD1 /* DogNetworkDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6F8E24BF0E1000506FD1 /* DogNetworkDI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		43286A02CFFFDB54923ED39F /* Pods_DogListing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DogListing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4CDB831144A93CB4A3DF75CB /* Pods-DogListing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogListing.debug.xcconfig"; path = "Target Support Files/Pods-DogListing/Pods-DogListing.debug.xcconfig"; sourceTree = "<group>"; };
-		B61B935A1A1C7FCBE7695028 /* Pods-DogListing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogListing.release.xcconfig"; path = "Target Support Files/Pods-DogListing/Pods-DogListing.release.xcconfig"; sourceTree = "<group>"; };
-		E92B6F5C24BDB91C00506FD1 /* DogListing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DogListing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E92B6F6024BDB91C00506FD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E92B6F6724BEE33900506FD1 /* DogListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListingViewController.swift; sourceTree = "<group>"; };
-		E92B6F6924BEE35C00506FD1 /* DogListingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DogListingViewController.storyboard; sourceTree = "<group>"; };
-		E92B6F6B24BEE42000506FD1 /* DogListingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListingCell.swift; sourceTree = "<group>"; };
-		E92B6F6D24BEE5CC00506FD1 /* DogListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListingViewModel.swift; sourceTree = "<group>"; };
-		E92B6F6F24BEE6BC00506FD1 /* DogListingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListingPresenter.swift; sourceTree = "<group>"; };
-		E92B6F7124BEE96A00506FD1 /* DogListingDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListingDI.swift; sourceTree = "<group>"; };
-		E92B6F7524BEF30500506FD1 /* DogListingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListingRouter.swift; sourceTree = "<group>"; };
-		E92B6F9024BF0FAF00506FD1 /* DogListingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListingInteractor.swift; sourceTree = "<group>"; };
+		3633B6969C6C5446C2C7F28D /* Pods_DogNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DogNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66A6E6E9995B67855865BCAF /* Pods-DogNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogNetwork.debug.xcconfig"; path = "Target Support Files/Pods-DogNetwork/Pods-DogNetwork.debug.xcconfig"; sourceTree = "<group>"; };
+		7AEEDB4BDD7A263986513D7E /* Pods-DogNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogNetwork.release.xcconfig"; path = "Target Support Files/Pods-DogNetwork/Pods-DogNetwork.release.xcconfig"; sourceTree = "<group>"; };
+		E92B6F8124BEFA7900506FD1 /* DogNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DogNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E92B6F8524BEFA7900506FD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E92B6F8C24BEFA8A00506FD1 /* DogNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogNetworkManager.swift; sourceTree = "<group>"; };
+		E92B6F8E24BF0E1000506FD1 /* DogNetworkDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogNetworkDI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E92B6F5924BDB91C00506FD1 /* Frameworks */ = {
+		E92B6F7E24BEFA7900506FD1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C962D551D8D4094CDAFC5692 /* Pods_DogListing.framework in Frameworks */,
+				3897E385FF7CAF90C5C1E31E /* Pods_DogNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8B5506737CDE8DD5FD3E7D03 /* Frameworks */ = {
+		41BC02A64E49A66608980258 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				43286A02CFFFDB54923ED39F /* Pods_DogListing.framework */,
+				3633B6969C6C5446C2C7F28D /* Pods_DogNetwork.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D008CE2DA0E8C6B8F171DEB1 /* Pods */ = {
+		B7A8A4977E3C9FB455DFF18C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4CDB831144A93CB4A3DF75CB /* Pods-DogListing.debug.xcconfig */,
-				B61B935A1A1C7FCBE7695028 /* Pods-DogListing.release.xcconfig */,
+				66A6E6E9995B67855865BCAF /* Pods-DogNetwork.debug.xcconfig */,
+				7AEEDB4BDD7A263986513D7E /* Pods-DogNetwork.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
 			sourceTree = "<group>";
 		};
-		E92B6F5224BDB91C00506FD1 = {
+		E92B6F7724BEFA7900506FD1 = {
 			isa = PBXGroup;
 			children = (
-				E92B6F5E24BDB91C00506FD1 /* DogListing */,
-				E92B6F5D24BDB91C00506FD1 /* Products */,
-				D008CE2DA0E8C6B8F171DEB1 /* Pods */,
-				8B5506737CDE8DD5FD3E7D03 /* Frameworks */,
+				E92B6F8324BEFA7900506FD1 /* DogNetwork */,
+				E92B6F8224BEFA7900506FD1 /* Products */,
+				B7A8A4977E3C9FB455DFF18C /* Pods */,
+				41BC02A64E49A66608980258 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		E92B6F5D24BDB91C00506FD1 /* Products */ = {
+		E92B6F8224BEFA7900506FD1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E92B6F5C24BDB91C00506FD1 /* DogListing.framework */,
+				E92B6F8124BEFA7900506FD1 /* DogNetwork.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E92B6F5E24BDB91C00506FD1 /* DogListing */ = {
+		E92B6F8324BEFA7900506FD1 /* DogNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				E92B6F6024BDB91C00506FD1 /* Info.plist */,
-				E92B6F6724BEE33900506FD1 /* DogListingViewController.swift */,
-				E92B6F6924BEE35C00506FD1 /* DogListingViewController.storyboard */,
-				E92B6F6B24BEE42000506FD1 /* DogListingCell.swift */,
-				E92B6F6D24BEE5CC00506FD1 /* DogListingViewModel.swift */,
-				E92B6F6F24BEE6BC00506FD1 /* DogListingPresenter.swift */,
-				E92B6F7124BEE96A00506FD1 /* DogListingDI.swift */,
-				E92B6F7524BEF30500506FD1 /* DogListingRouter.swift */,
-				E92B6F9024BF0FAF00506FD1 /* DogListingInteractor.swift */,
+				E92B6F8524BEFA7900506FD1 /* Info.plist */,
+				E92B6F8C24BEFA8A00506FD1 /* DogNetworkManager.swift */,
+				E92B6F8E24BF0E1000506FD1 /* DogNetworkDI.swift */,
 			);
-			path = DogListing;
+			path = DogNetwork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		E92B6F5724BDB91C00506FD1 /* Headers */ = {
+		E92B6F7C24BEFA7900506FD1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -111,41 +93,41 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		E92B6F5B24BDB91C00506FD1 /* DogListing */ = {
+		E92B6F8024BEFA7900506FD1 /* DogNetwork */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E92B6F6424BDB91C00506FD1 /* Build configuration list for PBXNativeTarget "DogListing" */;
+			buildConfigurationList = E92B6F8924BEFA7900506FD1 /* Build configuration list for PBXNativeTarget "DogNetwork" */;
 			buildPhases = (
-				BD25E6CDBCF97A1C3F8870D1 /* [CP] Check Pods Manifest.lock */,
-				E92B6F5724BDB91C00506FD1 /* Headers */,
-				E92B6F5824BDB91C00506FD1 /* Sources */,
-				E92B6F5924BDB91C00506FD1 /* Frameworks */,
-				E92B6F5A24BDB91C00506FD1 /* Resources */,
+				CEB5EA836DEE559CFD236CEC /* [CP] Check Pods Manifest.lock */,
+				E92B6F7C24BEFA7900506FD1 /* Headers */,
+				E92B6F7D24BEFA7900506FD1 /* Sources */,
+				E92B6F7E24BEFA7900506FD1 /* Frameworks */,
+				E92B6F7F24BEFA7900506FD1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = DogListing;
-			productName = DogListing;
-			productReference = E92B6F5C24BDB91C00506FD1 /* DogListing.framework */;
+			name = DogNetwork;
+			productName = DogNetwork;
+			productReference = E92B6F8124BEFA7900506FD1 /* DogNetwork.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E92B6F5324BDB91C00506FD1 /* Project object */ = {
+		E92B6F7824BEFA7900506FD1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = vpaveldm;
 				TargetAttributes = {
-					E92B6F5B24BDB91C00506FD1 = {
+					E92B6F8024BEFA7900506FD1 = {
 						CreatedOnToolsVersion = 11.4.1;
 						LastSwiftMigration = 1140;
 					};
 				};
 			};
-			buildConfigurationList = E92B6F5624BDB91C00506FD1 /* Build configuration list for PBXProject "DogListing" */;
+			buildConfigurationList = E92B6F7B24BEFA7900506FD1 /* Build configuration list for PBXProject "DogNetwork" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -153,29 +135,28 @@
 				en,
 				Base,
 			);
-			mainGroup = E92B6F5224BDB91C00506FD1;
-			productRefGroup = E92B6F5D24BDB91C00506FD1 /* Products */;
+			mainGroup = E92B6F7724BEFA7900506FD1;
+			productRefGroup = E92B6F8224BEFA7900506FD1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E92B6F5B24BDB91C00506FD1 /* DogListing */,
+				E92B6F8024BEFA7900506FD1 /* DogNetwork */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E92B6F5A24BDB91C00506FD1 /* Resources */ = {
+		E92B6F7F24BEFA7900506FD1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E92B6F6A24BEE35C00506FD1 /* DogListingViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		BD25E6CDBCF97A1C3F8870D1 /* [CP] Check Pods Manifest.lock */ = {
+		CEB5EA836DEE559CFD236CEC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -190,7 +171,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DogListing-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-DogNetwork-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -200,24 +181,19 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E92B6F5824BDB91C00506FD1 /* Sources */ = {
+		E92B6F7D24BEFA7900506FD1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E92B6F7624BEF30500506FD1 /* DogListingRouter.swift in Sources */,
-				E92B6F7024BEE6BC00506FD1 /* DogListingPresenter.swift in Sources */,
-				E92B6F9124BF0FAF00506FD1 /* DogListingInteractor.swift in Sources */,
-				E92B6F6824BEE33900506FD1 /* DogListingViewController.swift in Sources */,
-				E92B6F6C24BEE42000506FD1 /* DogListingCell.swift in Sources */,
-				E92B6F7224BEE96A00506FD1 /* DogListingDI.swift in Sources */,
-				E92B6F6E24BEE5CC00506FD1 /* DogListingViewModel.swift in Sources */,
+				E92B6F8F24BF0E1000506FD1 /* DogNetworkDI.swift in Sources */,
+				E92B6F8D24BEFA8A00506FD1 /* DogNetworkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		E92B6F6224BDB91C00506FD1 /* Debug */ = {
+		E92B6F8724BEFA7900506FD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,7 +256,7 @@
 			};
 			name = Debug;
 		};
-		E92B6F6324BDB91C00506FD1 /* Release */ = {
+		E92B6F8824BEFA7900506FD1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -337,9 +313,9 @@
 			};
 			name = Release;
 		};
-		E92B6F6524BDB91C00506FD1 /* Debug */ = {
+		E92B6F8A24BEFA7900506FD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4CDB831144A93CB4A3DF75CB /* Pods-DogListing.debug.xcconfig */;
+			baseConfigurationReference = 66A6E6E9995B67855865BCAF /* Pods-DogNetwork.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -348,14 +324,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = DogListing/Info.plist;
+				INFOPLIST_FILE = DogNetwork/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vpaveldm.icecream.DogListing;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vpaveldm.icecream.DogNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -364,9 +340,9 @@
 			};
 			name = Debug;
 		};
-		E92B6F6624BDB91C00506FD1 /* Release */ = {
+		E92B6F8B24BEFA7900506FD1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B61B935A1A1C7FCBE7695028 /* Pods-DogListing.release.xcconfig */;
+			baseConfigurationReference = 7AEEDB4BDD7A263986513D7E /* Pods-DogNetwork.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -375,14 +351,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = DogListing/Info.plist;
+				INFOPLIST_FILE = DogNetwork/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vpaveldm.icecream.DogListing;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vpaveldm.icecream.DogNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -393,25 +369,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E92B6F5624BDB91C00506FD1 /* Build configuration list for PBXProject "DogListing" */ = {
+		E92B6F7B24BEFA7900506FD1 /* Build configuration list for PBXProject "DogNetwork" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E92B6F6224BDB91C00506FD1 /* Debug */,
-				E92B6F6324BDB91C00506FD1 /* Release */,
+				E92B6F8724BEFA7900506FD1 /* Debug */,
+				E92B6F8824BEFA7900506FD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E92B6F6424BDB91C00506FD1 /* Build configuration list for PBXNativeTarget "DogListing" */ = {
+		E92B6F8924BEFA7900506FD1 /* Build configuration list for PBXNativeTarget "DogNetwork" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E92B6F6524BDB91C00506FD1 /* Debug */,
-				E92B6F6624BDB91C00506FD1 /* Release */,
+				E92B6F8A24BEFA7900506FD1 /* Debug */,
+				E92B6F8B24BEFA7900506FD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E92B6F5324BDB91C00506FD1 /* Project object */;
+	rootObject = E92B6F7824BEFA7900506FD1 /* Project object */;
 }

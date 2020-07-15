@@ -26,26 +26,20 @@ class DogListingPresenter: DogListingPresenterProtocol {
     }
     // MARK: - Properties
     var router: DogListingRouterProtocol!
+    var interactor: DogListingInteractorProtocol!
+    private let disposeBag = DisposeBag()
     private var viewModels: [DogListingViewModel] = []
     private let dogViewModelsSubject = PublishSubject<[DogListingViewModel]>()
 
     // MARK: - Actions
     func loadDogs() {
-        let queue = DispatchQueue.global(qos: .userInitiated)
-        queue.asyncAfter(deadline: .now() + .seconds(2)) { [weak self] in
-            let viewModels: [DogListingViewModel] = [
-                .init(id: "1",
-                      name: "Хаски",
-                      imageURL: "https://funik.ru/wp-content/uploads/2018/10/eb7e498b8bdcaedf840b.jpg"),
-                .init(id: "2",
-                      name: "Сиба-Ину",
-                      imageURL: "https://kotsobaka.com/wp-content/uploads/2018/07/siba1.jpeg"),
-                .init(id: "3",
-                      name: "Корги",
-                      imageURL: "https://lapkins.ru/upload/uf/b50/b50d4643a4f0e08fe678a227fbd49bdb.jpg")
-            ]
-            self?.dogViewModelsSubject.onNext(viewModels)
-        }
+        interactor.loadDogs()
+            .subscribe(onNext: { viewModels in
+                self.dogViewModelsSubject.onNext(viewModels)
+            }, onError: { error in
+                print(error.localizedDescription)
+            })
+            .disposed(by: disposeBag)
     }
     
     // MARK: - Showing methods

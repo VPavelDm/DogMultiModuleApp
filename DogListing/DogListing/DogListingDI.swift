@@ -29,11 +29,16 @@ public class DogListingDI: Assembly, DogListingProtocol {
     private func createPresenter(view: UIViewController) -> DogListingPresenterProtocol {
         define(init: DogListingPresenter()) {
             $0.router = self.createRouter(view: view)
+            $0.interactor = self.createInteractor()
             return $0
         }
     }
     
     private func createRouter(view: UIViewController) -> DogListingRouterProtocol {
         define(init: DogListingRouter(viewController: view, mediator: self.mediator))
+    }
+    
+    private func createInteractor() -> DogListingInteractorProtocol {
+        define(init: DogListingInteractor(mediator: self.mediator))
     }
 }

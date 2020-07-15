@@ -10,6 +10,7 @@ import Foundation
 import DogProtocols
 import DogProfile
 import DogListing
+import DogNetwork
 
 class DogGlobalMediator: DogGlobalMediatorProtocol {
     func getDogProfileProtocol() -> DogProfileProtocol {
@@ -22,5 +23,9 @@ class DogGlobalMediator: DogGlobalMediatorProtocol {
         let assembly = DogListingDI.instance()
         assembly.mediator = self
         return assembly
+    }
+    
+    func getDogNetwork() -> DogNetworkManagerProtocol {
+        DogNetworkDI.instance().manager
     }
 }
