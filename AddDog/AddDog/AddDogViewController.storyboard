@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="swf-Ww-Us7">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Dog View Controller-->
+        <scene sceneID="X7Q-5N-o4j">
+            <objects>
+                <viewController id="swf-Ww-Us7" customClass="AddDogViewController" customModule="AddDog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WhC-FS-0gk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter dog name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XwH-ue-GWs">
+                                <rect key="frame" x="16" y="300" width="382" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter image URL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ICN-Ib-juw">
+                                <rect key="frame" x="16" y="342" width="382" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTw-WV-WER">
+                                <rect key="frame" x="192" y="384" width="30" height="30"/>
+                                <state key="normal" title="Add"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="QTw-WV-WER" firstAttribute="top" secondItem="ICN-Ib-juw" secondAttribute="bottom" constant="8" symbolic="YES" id="4I8-4w-JoT"/>
+                            <constraint firstItem="ICN-Ib-juw" firstAttribute="trailing" secondItem="XwH-ue-GWs" secondAttribute="trailing" id="7i1-o6-OPL"/>
+                            <constraint firstItem="XwH-ue-GWs" firstAttribute="centerY" secondItem="c0v-ap-Mp9" secondAttribute="centerY" multiplier="0.7" id="EVh-QI-Usc"/>
+                            <constraint firstItem="c0v-ap-Mp9" firstAttribute="trailing" secondItem="XwH-ue-GWs" secondAttribute="trailing" constant="16" id="TM9-87-i6L"/>
+                            <constraint firstItem="ICN-Ib-juw" firstAttribute="top" secondItem="XwH-ue-GWs" secondAttribute="bottom" constant="8" symbolic="YES" id="gIT-AB-6lR"/>
+                            <constraint firstItem="ICN-Ib-juw" firstAttribute="leading" secondItem="XwH-ue-GWs" secondAttribute="leading" id="gws-Aw-jyX"/>
+                            <constraint firstItem="XwH-ue-GWs" firstAttribute="leading" secondItem="c0v-ap-Mp9" secondAttribute="leading" constant="16" id="h14-YD-DlB"/>
+                            <constraint firstItem="QTw-WV-WER" firstAttribute="centerX" secondItem="ICN-Ib-juw" secondAttribute="centerX" id="qIz-7U-R7h"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="c0v-ap-Mp9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mrH-jP-YGu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="89"/>
+        </scene>
+    </scenes>
+</document>
