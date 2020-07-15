@@ -19,6 +19,12 @@
 		E92B6F4B24BDB8BF00506FD1 /* DogProtocols.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B6F4824BDB8BF00506FD1 /* DogProtocols.framework */; };
 		E92B6F4C24BDB8BF00506FD1 /* DogProtocols.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E92B6F4824BDB8BF00506FD1 /* DogProtocols.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E92B6F7424BEEC6C00506FD1 /* DogGlobalMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6F7324BEEC6C00506FD1 /* DogGlobalMediator.swift */; };
+		E930E02E24BF1B5B00AD40DF /* DogListing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E930E02D24BF1B5B00AD40DF /* DogListing.framework */; };
+		E930E02F24BF1B5B00AD40DF /* DogListing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E930E02D24BF1B5B00AD40DF /* DogListing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E930E03124BF1B8400AD40DF /* DogNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E930E03024BF1B8400AD40DF /* DogNetwork.framework */; };
+		E930E03224BF1B8400AD40DF /* DogNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E930E03024BF1B8400AD40DF /* DogNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E930E03424BF1BE100AD40DF /* DogCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E930E03324BF1BE100AD40DF /* DogCore.framework */; };
+		E930E03524BF1BE100AD40DF /* DogCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E930E03324BF1BE100AD40DF /* DogCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,7 +34,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				E930E03224BF1B8400AD40DF /* DogNetwork.framework in Embed Frameworks */,
+				E930E03524BF1BE100AD40DF /* DogCore.framework in Embed Frameworks */,
 				E92B6F4A24BDB8BF00506FD1 /* DogProfile.framework in Embed Frameworks */,
+				E930E02F24BF1B5B00AD40DF /* DogListing.framework in Embed Frameworks */,
 				E92B6F4C24BDB8BF00506FD1 /* DogProtocols.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -59,6 +68,9 @@
 		E92B6F4724BDB8BF00506FD1 /* DogProfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DogProfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92B6F4824BDB8BF00506FD1 /* DogProtocols.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DogProtocols.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92B6F7324BEEC6C00506FD1 /* DogGlobalMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogGlobalMediator.swift; sourceTree = "<group>"; };
+		E930E02D24BF1B5B00AD40DF /* DogListing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DogListing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E930E03024BF1B8400AD40DF /* DogNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DogNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E930E03324BF1BE100AD40DF /* DogCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DogCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +78,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E930E03424BF1BE100AD40DF /* DogCore.framework in Frameworks */,
+				E930E02E24BF1B5B00AD40DF /* DogListing.framework in Frameworks */,
 				E92B6F4B24BDB8BF00506FD1 /* DogProtocols.framework in Frameworks */,
+				E930E03124BF1B8400AD40DF /* DogNetwork.framework in Frameworks */,
 				62F0D44D369EF0E1EB11555F /* Pods_DogHome.framework in Frameworks */,
 				E92B6F4924BDB8BF00506FD1 /* DogProfile.framework in Frameworks */,
 			);
@@ -78,6 +93,9 @@
 		43D468E6D7E4490A4AAE9D6F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E930E03324BF1BE100AD40DF /* DogCore.framework */,
+				E930E03024BF1B8400AD40DF /* DogNetwork.framework */,
+				E930E02D24BF1B5B00AD40DF /* DogListing.framework */,
 				E92B6F4724BDB8BF00506FD1 /* DogProfile.framework */,
 				E92B6F4824BDB8BF00506FD1 /* DogProtocols.framework */,
 				E92B6F4324BDB5EF00506FD1 /* DogProfile.framework */,
