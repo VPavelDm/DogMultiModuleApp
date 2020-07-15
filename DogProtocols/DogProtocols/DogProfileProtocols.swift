@@ -22,6 +22,7 @@ public protocol DogListingProtocol {
 
 public protocol DogNetworkManagerProtocol {
     func loadDogs(completion: @escaping (Result<JSON, Error>) -> Void)
+    func loadDog(id: String, completion: @escaping (Result<JSON, Error>) -> Void)
 }
 
 public protocol DogGlobalMediatorProtocol {

@@ -27,6 +27,13 @@ public class DogProfileDI: Assembly, DogProfileProtocol {
     }
 
     private func createPresenter(id: String) -> DogProfilePresenterProtocol {
-        define(init: DogProfilePresenter(id: id))
+        define(init: DogProfilePresenter(id: id)) {
+            $0.interactor = self.createInteractor()
+            return $0
+        }
+    }
+    
+    private func createInteractor() -> DogProfileInteractorProtocol {
+        define(init: DogProfileInteractor(mediator: self.mediator))
     }
 }

@@ -23,6 +23,7 @@ class DogProfileViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupBindings()
         presenter.loadDogProfile()
     }
 

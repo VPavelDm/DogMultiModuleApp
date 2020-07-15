@@ -18,8 +18,11 @@ class DogProfilePresenter: DogProfilePresenterProtocol {
     // MARK: - Outputs
     var dogProfileObservable: Observable<DogProfileViewModel> {
         dogProfileSubject
+            .observeOn(MainScheduler.instance)
     }
     // MARK: - Properties
+    var interactor: DogProfileInteractorProtocol!
+    private let disposeBag = DisposeBag()
     private let dogProfileSubject = PublishSubject<DogProfileViewModel>()
     let id: String
     // MARK: - Initializers
@@ -28,10 +31,12 @@ class DogProfilePresenter: DogProfilePresenterProtocol {
     }
     // MARK: - Actions
     func loadDogProfile() {
-        let queue = DispatchQueue.global(qos: .userInteractive)
-        queue.asyncAfter(deadline: .now() + .seconds(2)) { [weak self] in
-            self?.dogProfileSubject.onNext(.init(name: "Хаски",
-                                                 imageURL: "https://avatars.mds.yandex.net/get-pdb/2883913/16bbcb45-3368-428c-baf8-142afb114820/s1200?webp=false"))
-        }
+        interactor.loadDog(id: id)
+            .subscribe(onNext: { [weak self] viewModel in
+                self?.dogProfileSubject.onNext(viewModel)
+            }, onError: { error in
+                print(error.localizedDescription)
+            })
+            .disposed(by: disposeBag)
     }
 }

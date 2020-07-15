@@ -15,6 +15,7 @@
 		E92B6EF824BDA92300506FD1 /* DogProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6EF724BDA92300506FD1 /* DogProfilePresenter.swift */; };
 		E92B6F4F24BDB8D800506FD1 /* DogCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B6F4E24BDB8D800506FD1 /* DogCore.framework */; };
 		E92B6F5124BDB8D800506FD1 /* DogProtocols.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B6F5024BDB8D800506FD1 /* DogProtocols.framework */; };
+		E92B6F9324BF14FD00506FD1 /* DogProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6F9224BF14FD00506FD1 /* DogProfileInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		E92B6F2D24BDAE4E00506FD1 /* DogCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DogCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92B6F4E24BDB8D800506FD1 /* DogCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DogCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92B6F5024BDB8D800506FD1 /* DogProtocols.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DogProtocols.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E92B6F9224BF14FD00506FD1 /* DogProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogProfileInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				E92B6EF324BDA8BF00506FD1 /* DogProfileViewModel.swift */,
 				E92B6EF524BDA8EA00506FD1 /* DogProfileDI.swift */,
 				E92B6EF724BDA92300506FD1 /* DogProfilePresenter.swift */,
+				E92B6F9224BF14FD00506FD1 /* DogProfileInteractor.swift */,
 			);
 			path = DogProfile;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E92B6F9324BF14FD00506FD1 /* DogProfileInteractor.swift in Sources */,
 				E92B6EF224BDA87500506FD1 /* DogProfileViewController.swift in Sources */,
 				E92B6EF424BDA8BF00506FD1 /* DogProfileViewModel.swift in Sources */,
 				E92B6EF624BDA8EA00506FD1 /* DogProfileDI.swift in Sources */,

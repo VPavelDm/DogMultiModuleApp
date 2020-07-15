@@ -17,6 +17,26 @@ public class DogNetworkManager: DogNetworkManagerProtocol {
         }
     }
     
+    public func loadDog(id: String, completion: @escaping (Result<JSON, Error>) -> Void) {
+        let queue = DispatchQueue.global(qos: .userInitiated)
+        queue.asyncAfter(deadline: .now() + .seconds(1)) { [weak self, viewModelsJSON] in
+            if let array = self?.mapJSONToArray(viewModelsJSON) {
+                for item in array {
+                    if item["id"] == id {
+                        completion(.success(item))
+                        return
+                    }
+                }
+            }
+        }
+    }
+    
+    private func mapJSONToArray(_ json: JSON) -> [[String: String]]? {
+        guard let jsonString = json as? String else { return [] }
+        let data = Data(jsonString.utf8)
+        return try? JSONSerialization.jsonObject(with: data, options: []) as? [[String: String]]
+    }
+    
     private let viewModelsJSON: String = """
 [
   {
