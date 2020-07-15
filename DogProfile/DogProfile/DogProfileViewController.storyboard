@@ -15,30 +15,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ual-a2-JEg">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ual-a2-JEg">
                                 <rect key="frame" x="87" y="106.5" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ual-a2-JEg" secondAttribute="height" multiplier="1:1" id="DZL-gJ-Pc9"/>
                                     <constraint firstAttribute="width" constant="240" id="jyR-fW-TkW"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqC-lQ-MEJ">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqC-lQ-MEJ">
                                 <rect key="frame" x="176" y="354.5" width="62.5" height="31.5"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Zkv-vv-yNV">
+                                <rect key="frame" x="197" y="443" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="ual-a2-JEg" firstAttribute="centerX" secondItem="DHE-rZ-jhq" secondAttribute="centerX" id="IMi-ej-oVL"/>
                             <constraint firstItem="fqC-lQ-MEJ" firstAttribute="top" secondItem="ual-a2-JEg" secondAttribute="bottom" constant="8" symbolic="YES" id="LYP-If-mg0"/>
+                            <constraint firstItem="Zkv-vv-yNV" firstAttribute="centerY" secondItem="DHE-rZ-jhq" secondAttribute="centerY" id="RCV-GW-Jek"/>
+                            <constraint firstItem="Zkv-vv-yNV" firstAttribute="centerX" secondItem="DHE-rZ-jhq" secondAttribute="centerX" id="V0T-NG-QFa"/>
                             <constraint firstItem="fqC-lQ-MEJ" firstAttribute="centerX" secondItem="ual-a2-JEg" secondAttribute="centerX" id="a7F-WT-Qj7"/>
                             <constraint firstItem="ual-a2-JEg" firstAttribute="centerY" secondItem="DHE-rZ-jhq" secondAttribute="centerY" multiplier="0.5" id="vPI-CR-iYj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DHE-rZ-jhq"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="Zkv-vv-yNV" id="JuF-Mx-Boe"/>
                         <outlet property="dogImage" destination="ual-a2-JEg" id="1vf-jV-0cQ"/>
                         <outlet property="nameLabel" destination="fqC-lQ-MEJ" id="mE1-Dk-6na"/>
                     </connections>

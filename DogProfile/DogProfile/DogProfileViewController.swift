@@ -14,6 +14,7 @@ class DogProfileViewController: UIViewController {
     // MARK: - Outlets
     @IBOutlet weak var dogImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     // MARK: - Properties
     private var imageLoadingCancelation: UIImageView.CancelBlock?
@@ -23,6 +24,7 @@ class DogProfileViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideContent()
         setupBindings()
         presenter.loadDogProfile()
     }
@@ -38,6 +40,7 @@ class DogProfileViewController: UIViewController {
             .subscribe(onNext: { [weak self] viewModel in
                 self?.nameLabel.text = viewModel.name
                 self?.loadImage(url: viewModel.imageURL)
+                self?.showContent()
             })
             .disposed(by: disposeBag)
     }
@@ -62,5 +65,19 @@ class DogProfileViewController: UIViewController {
         alert.addAction(again)
         alert.addAction(action)
         present(alert, animated: true)
+    }
+    
+    private func showContent() {
+        activityIndicator.stopAnimating()
+        UIView.animate(withDuration: 0.5) { [unowned self] in
+            self.dogImage.alpha = 1
+            self.nameLabel.alpha = 1
+        }
+    }
+    
+    private func hideContent() {
+        activityIndicator.startAnimating()
+        dogImage.alpha = 0
+        nameLabel.alpha = 0
     }
 }
