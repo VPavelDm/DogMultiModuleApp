@@ -10,6 +10,8 @@ import EasyDi
 import DogProtocols
 
 public class DogProfileDI: Assembly, DogProfileProtocol {
+    public var mediator: DogGlobalMediatorProtocol!
+    
     public func getDogProfile(id: String) -> UIViewController {
         createView(id: id)
     }

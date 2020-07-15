@@ -18,6 +18,7 @@
 		E92B6F4A24BDB8BF00506FD1 /* DogProfile.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E92B6F4724BDB8BF00506FD1 /* DogProfile.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E92B6F4B24BDB8BF00506FD1 /* DogProtocols.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B6F4824BDB8BF00506FD1 /* DogProtocols.framework */; };
 		E92B6F4C24BDB8BF00506FD1 /* DogProtocols.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E92B6F4824BDB8BF00506FD1 /* DogProtocols.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E92B6F7424BEEC6C00506FD1 /* DogGlobalMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B6F7324BEEC6C00506FD1 /* DogGlobalMediator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,6 +58,7 @@
 		E92B6F4324BDB5EF00506FD1 /* DogProfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DogProfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92B6F4724BDB8BF00506FD1 /* DogProfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DogProfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92B6F4824BDB8BF00506FD1 /* DogProtocols.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DogProtocols.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E92B6F7324BEEC6C00506FD1 /* DogGlobalMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogGlobalMediator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				E92B6ECF24BDA62700506FD1 /* Assets.xcassets */,
 				E92B6ED124BDA62700506FD1 /* LaunchScreen.storyboard */,
 				E92B6ED424BDA62700506FD1 /* Info.plist */,
+				E92B6F7324BEEC6C00506FD1 /* DogGlobalMediator.swift */,
 			);
 			path = DogHome;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 			files = (
 				E92B6ECB24BDA62300506FD1 /* ViewController.swift in Sources */,
 				E92B6EC724BDA62300506FD1 /* AppDelegate.swift in Sources */,
+				E92B6F7424BEEC6C00506FD1 /* DogGlobalMediator.swift in Sources */,
 				E92B6EC924BDA62300506FD1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

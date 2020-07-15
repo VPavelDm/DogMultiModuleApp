@@ -7,8 +7,11 @@
 //
 
 import EasyDi
+import DogProtocols
 
-public class DogListingDI: Assembly {
+public class DogListingDI: Assembly, DogListingProtocol {
+    public var mediator: DogGlobalMediatorProtocol!
+    
     public func getDogListing() -> UIViewController {
         createView()
     }

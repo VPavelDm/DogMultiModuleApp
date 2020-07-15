@@ -18,7 +18,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func clickMeIsPressed(_ sender: Any) {
-        let view = DogListingDI.instance().getDogListing()
+        let mediator = DogGlobalMediator()
+        let view = mediator.getDogListingProtocol().getDogListing()
         navigationController?.pushViewController(view, animated: true)
     }
     
