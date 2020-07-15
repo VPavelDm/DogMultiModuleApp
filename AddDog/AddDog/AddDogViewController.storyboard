@@ -28,14 +28,27 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTw-WV-WER">
                                 <rect key="frame" x="192" y="384" width="30" height="30"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addButtonIsPressed:" destination="swf-Ww-Us7" eventType="touchUpInside" id="TFt-am-Tdb"/>
+                                </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6wY-49-qUz">
+                                <rect key="frame" x="0.0" y="44" width="414" height="5"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="yck-5e-yAi"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="6wY-49-qUz" firstAttribute="top" secondItem="c0v-ap-Mp9" secondAttribute="top" id="2Dk-Xh-YYA"/>
                             <constraint firstItem="QTw-WV-WER" firstAttribute="top" secondItem="ICN-Ib-juw" secondAttribute="bottom" constant="8" symbolic="YES" id="4I8-4w-JoT"/>
                             <constraint firstItem="ICN-Ib-juw" firstAttribute="trailing" secondItem="XwH-ue-GWs" secondAttribute="trailing" id="7i1-o6-OPL"/>
                             <constraint firstItem="XwH-ue-GWs" firstAttribute="centerY" secondItem="c0v-ap-Mp9" secondAttribute="centerY" multiplier="0.7" id="EVh-QI-Usc"/>
                             <constraint firstItem="c0v-ap-Mp9" firstAttribute="trailing" secondItem="XwH-ue-GWs" secondAttribute="trailing" constant="16" id="TM9-87-i6L"/>
+                            <constraint firstItem="c0v-ap-Mp9" firstAttribute="trailing" secondItem="6wY-49-qUz" secondAttribute="trailing" id="YTQ-AQ-Us7"/>
+                            <constraint firstItem="6wY-49-qUz" firstAttribute="leading" secondItem="c0v-ap-Mp9" secondAttribute="leading" id="YaE-eQ-Sdq"/>
                             <constraint firstItem="ICN-Ib-juw" firstAttribute="top" secondItem="XwH-ue-GWs" secondAttribute="bottom" constant="8" symbolic="YES" id="gIT-AB-6lR"/>
                             <constraint firstItem="ICN-Ib-juw" firstAttribute="leading" secondItem="XwH-ue-GWs" secondAttribute="leading" id="gws-Aw-jyX"/>
                             <constraint firstItem="XwH-ue-GWs" firstAttribute="leading" secondItem="c0v-ap-Mp9" secondAttribute="leading" constant="16" id="h14-YD-DlB"/>
@@ -43,6 +56,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="c0v-ap-Mp9"/>
                     </view>
+                    <connections>
+                        <outlet property="imageURL" destination="ICN-Ib-juw" id="VLd-tS-Vbw"/>
+                        <outlet property="nameLabel" destination="XwH-ue-GWs" id="fbh-vr-qiT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mrH-jP-YGu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -10,6 +10,20 @@ import Foundation
 import DogProtocols
 
 public class DogNetworkManager: DogNetworkManagerProtocol {
+    public func uploadDog(name: String, url: String, completion: @escaping (Result<String, Error>) -> Void) {
+        let queue = DispatchQueue.global(qos: .userInitiated)
+        queue.asyncAfter(deadline: .now() + .seconds(2)) { [weak self] in
+            guard let self = self else { return }
+            guard var current = self.mapJSONToArray(self.viewModelsJSON) else { return }
+            current.append([
+                "id": "\(current.count)",
+                "name": name,
+                "imageURL": url])
+            self.viewModelsJSON = current.description
+            completion(.success("\(current.count)"))
+        }
+    }
+    
     public func loadDogs(completion: @escaping (Result<JSON, Error>) -> Void) {
         let queue = DispatchQueue.global(qos: .userInitiated)
         queue.asyncAfter(deadline: .now() + .seconds(1)) { [viewModelsJSON] in
@@ -37,7 +51,7 @@ public class DogNetworkManager: DogNetworkManagerProtocol {
         return try? JSONSerialization.jsonObject(with: data, options: []) as? [[String: String]]
     }
     
-    private let viewModelsJSON: String = """
+    private var viewModelsJSON: String = """
 [
   {
     "id": "1",
